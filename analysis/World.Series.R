@@ -1,0 +1,5 @@
+N.Games <- c(6,4,4,5,4,5,6,5,7,4)
+Winner <- c("NL", "AL", "AL", "NL", "NL", "NL", "AL", "NL", "NL", "NL")
+table(Winner)
+barplot(table(Winner))
+by(N.Games, Winner, summary)
